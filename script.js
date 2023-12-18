@@ -70,9 +70,5 @@
    c) Lower Camel Case: firstName, lastName, masterCard, interCity.
 
 
-
-
-
-
-
 */
+
