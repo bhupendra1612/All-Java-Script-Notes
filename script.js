@@ -8,11 +8,11 @@
 4) ECMAScript is a standard on which JavaScript is based. It was created to ensure that different documents on JavaScript are talking about the same language.
 
 5) What is JavaScript?
-   a) JavaScript is a lightweight, OOP language.
-   b) It is a scripting language for web pages.
-   c) It is used to add interactivity and dynamic effects to web pages. “.js” is the extension of javascript
-   d) Nowadays JS used in server-side development. JS Frontend Frameworks: React, Angular, Vue.
-      JS Backend Frameworks: Express, Node.
+    a) JavaScript is a lightweight, OOP language.
+    b) It is a scripting language for web pages.
+    c) It is used to add interactivity and dynamic effects to web pages. “.js” is the extension of javascript
+    d) Nowadays JS used in server-side development. JS Frontend Frameworks: React, Angular, Vue.
+    JS Backend Frameworks: Express, Node.
 
 6) JavaScript is a client-side language, which means that it is executed by the user's web browser rather than the web server. This allows JavaScript to interact with the user and create dynamic, interactive web pages. JavaScript is often used in combination with HTML and CSS to create web pages that are more interactive and engaging. It can be used to create all sorts of effects, such as drop-down menus, image sliders, and pop-up windows.
 

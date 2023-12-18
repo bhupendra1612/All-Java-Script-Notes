@@ -13,9 +13,9 @@
    e) Only use var if you MUST support old browsers.
 
 5) You can declare many variables in one statement. Start the statement with let and separate the variables by comma. let person = "John Doe", carName = "Volvo", price = 200;.  A declaration can span multiple lines: 
-let person = "John Doe",
-carName = "Volvo",
-price = 200;
+    let person = "John Doe",
+    carName = "Volvo",
+    price = 200;
 
 6) A variable declared without a value will have the value undefined. If you re-declare a JavaScript variable declared with var, it will not lose its value. You cannot re-declare a variable declared with let or const.
 
@@ -48,25 +48,24 @@ like  = let x = "5" + 2 + 3; let x = 2 + 3 + "5"; this all are string
 16) {} - this sign is called Scope. if we not provide value to variable it is become: 'undefined' statement. "Use Strict"; - Treat all JS code as newer version. Prefer not to use var: because of issue in block scope and functional scope. 
 
 17) How to write a variable name:
-1. firstname
-2. first-name
-3. first_name
-4. firstName
-5. firstname99
-
-Wrong way: 1. first name, 2. 99firstname
+    a) firstname
+    b) first-name
+    c) first_name
+    d) firstName
+    e) firstname99
+    f) Wrong way: 1. first name, 2. 99firstname
  
 18) JavaScript const: Always declare a variable with const when you know that the value should not be changed. Use const when you declare: new Array, new Object, new Function, new RegExp. It does not define a constant value. It defines a constant reference to a value. Because of this you can NOT:
 
-a) Reassign a constant value
-b) Reassign a constant array
-C) Reassign a constant object
-d) Change the elements of constant array
-e) Change the properties of constant object
-f) But we  can NOT reassign the array & object:
-g) Redeclaring an existing var or let variable to const, in the same scope, is not allowed.
-h) Reassigning an existing const variable, in the same scope, is not allowed.
-i) Redeclaring a variable with const, in another scope, or in another block, is allowed.
+    a) Reassign a constant value
+    b) Reassign a constant array
+    C) Reassign a constant object
+    d) Change the elements of constant array
+    e) Change the properties of constant object
+    f) But we  can NOT reassign the array & object:
+    g) Redeclaring an existing var or let variable to const, in the same scope, is not allowed.
+    h) Reassigning an existing const variable, in the same scope, is not allowed.
+    i) Redeclaring a variable with const, in another scope, or in another block, is allowed.
 
 */
 
@@ -108,6 +107,5 @@ console.log(first_name);
 // let first_name = "Veer" this variable is already declared
 // let first_name = "Bhupendra singh"  //  we are not decaled same name again in Let but we assign new value to let.
 
-// Const Variable
 const Y= "This is constant variable it is not change"
 console.log(Y);
