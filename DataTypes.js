@@ -17,7 +17,7 @@
 
  
 
-4) JavaScript Numbers: All JavaScript numbers are stored as decimal numbers (floating point). Numbers can be written with, or without decimals. Extra large or extra small numbers can be written with scientific (exponential) notation like: (let y = 123e5; 12300000 ) & (let z = 123e-5; 0.00123). Javascript numbers are always one type: double (64-bit floating point).
+
 
 5) JavaScript BigInt: All JavaScript numbers are stored in a a 64-bit floating-point format like: (let x = BigInt("123456789012345678901234567890")). 
 
