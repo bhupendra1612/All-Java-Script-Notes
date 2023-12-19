@@ -25,6 +25,9 @@ a) x = new String();        // Declares x as a String object
 b) y = new Number();        // Declares y as a Number object
 c) z = new Boolean();       // Declares z as a Boolean object
 
+7) Comparing two JavaScript objects always returns false.
+
+
 
 */
 

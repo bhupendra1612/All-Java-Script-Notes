@@ -15,7 +15,7 @@
     c) Function
     d) A date
 
-3) JavaScript Strings: Strings are written with quotes. You can use single or double quotes. You can use quotes inside a string, as long as they don't match the quotes surrounding the string like: (let answer1 = "It's alright") & (let answer3 = 'He is called "Johnny"'). 
+ 
 
 4) JavaScript Numbers: All JavaScript numbers are stored as decimal numbers (floating point). Numbers can be written with, or without decimals. Extra large or extra small numbers can be written with scientific (exponential) notation like: (let y = 123e5; 12300000 ) & (let z = 123e-5; 0.00123). Javascript numbers are always one type: double (64-bit floating point).
 
