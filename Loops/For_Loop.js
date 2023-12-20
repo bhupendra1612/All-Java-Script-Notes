@@ -37,6 +37,9 @@ for (let index = 0; index <= 5; index++){
   console.log(element)
 };
 
+
+// =============== For Loop with if condition =================
+
 for (let i = 0; i <= 6; i++){
   const element = i;
   if (element == 3){
@@ -50,6 +53,13 @@ for (let i = 0; i <= 6; i++){
 
 
 
+// ================= for loop on String ================
+const greeting = " HELLO WORLD"
+for (const greet of greeting) {
+  console.log( `Each char is ${greet}`);
+};
+
+
 // ================= for loop on Array ================
 let myArray = [" flash", " superman", " ironman", " spiderman "]
 console.log(myArray)
@@ -58,6 +68,10 @@ for (let i = 0; i < myArray.length; i++) {
   console.log(element)
 };
 
+const arr1 = [1,2,3,4,5]
+for (const num of arr1) {
+  console.log(num);
+};
 
 
 // ========== Nested Loop ============
@@ -138,3 +152,59 @@ for (let i = 0; i <= 5; i++) {
 };
 
 
+// Map is type of Object
+
+//  ========== for each loop =========
+
+const coding = ["js", "ruby", "java", "python", "cpp"]
+
+coding.forEach( function (val){
+    console.log(val);
+} )
+
+coding.forEach( (item) => {
+    console.log(item);
+} )
+
+function printMe(item){
+    console.log(item);
+}
+
+coding.forEach(printMe)
+
+coding.forEach( (item, index, arr)=> {
+    console.log(item, index, arr);
+} );
+
+
+const myCoding = [
+  {
+      languageName: "javascript",
+      languageFileName: "js"
+  },
+  {
+      languageName: "java",
+      languageFileName: "ja"
+  },
+  {
+      languageName: "python",
+      languageFileName: "py"
+  },
+]
+
+myCoding.forEach( (item) => {
+  console.log(item.languageName);
+} );
+
+myCoding.forEach( (item) => {
+  console.log(item.languageFileName);
+} );
+
+myCoding.forEach( (item) => {
+  console.log(item);
+} )
+
+
+for (let i = 0; i < myCoding.length; i++) {
+  const element = myCoding[i];
+} // it is not working, for loop is not working in Array with objects

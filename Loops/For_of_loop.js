@@ -1,10 +1,7 @@
 /*
-1) The For Of Loop: The JavaScript for of statement loops through the values of an iterable object. It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:
+1) The For Of Loop: The JavaScript for of statement loops through the values of an iterable object. It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more. but for of loop is not working in object.
 
 2) variable - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var.  Iterable: An object that has iterable properties.
-
-
-
 
 */
 

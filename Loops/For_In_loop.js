@@ -32,3 +32,46 @@ function myFunction(value) {
   txt2 += value;
 };
 console.log(txt2);
+
+
+const myObject = {
+  'Sun': 'Day',
+   55 : "five five",
+  'six four': 64,
+};
+
+for (const key in myObject) {
+  console.log(myObject);
+};
+
+
+
+const myObject1 = {
+  js: 'javascript',
+  py: 'python',
+  sql: "sql database",
+  swift: "swift by apple"
+}
+
+for (const key in myObject1) {
+  console.log(key);
+};
+
+for (const key in myObject1) {
+  console.log(`${key} full defination of ${myObject1[key]}`);
+};
+
+for (const value in myObject1) {
+  console.log(myObject1[value]);
+};
+
+const programming = ["js", "rb", "py", "java", "cpp"]
+
+for (const key in programming) {
+  console.log(key);
+};
+
+for (const key in programming) {
+    console.log(programming[key]);
+};
+
