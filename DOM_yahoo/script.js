@@ -164,7 +164,7 @@ document.getElementById("header").addEventListener("click", function(){
 });
 
 // UseCapture
-addEventListener(event, function, useCapture);
+// addEventListener(event, function, useCapture);
 
 document.querySelector("#inner").addEventListener('click', function(){
     alert('Inner Div')
