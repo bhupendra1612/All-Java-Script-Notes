@@ -193,7 +193,7 @@ function abc(){
 };
 
 
-// Class List Methods
+// =====  Class List Methods ================
 
 // a) add(class1, class2, ...)
 // b) remove(class1, class2, ...)
@@ -248,7 +248,34 @@ function abc(){
 };
 
 
+// ============ DOM Traversal Methods ==========
+// a) parentElement
+// b) parentNode
+// c) children
+// d) 
 
+// parentElement & parentNode
+let a = document.getElementById("inner").parentElement;
+let b = document.getElementById("outer").parentElement;
+let a1 = document.getElementById("inner").parentElement.style.background = 'red'
+
+let c = document.getElementById("inner").parentNode;
+let c1 = document.getElementById("inner").parentNode.style.background = 'red'
+
+
+// children & ChildNode
+let a = document.getElementById("inner").children; // it is give only elements
+let b = document.getElementById("outer").children;
+let b = document.getElementById("inner").children[1];
+let b = document.getElementById("inner").children[1].innerHTML;
+let c1 = document.getElementById("inner").children[1].style.background = 'red'
+
+
+let a = document.getElementById("inner").childNodes;  // it is give both element & text 
+let b = document.getElementById("outer").childNodes;
+let b = document.getElementById("inner").childNodes[1];
+let b = document.getElementById("inner").childNodes[4].innerHTML;
+let c1 = document.getElementById("inner").childNodes[1].style.background = 'red';
 
 
 
