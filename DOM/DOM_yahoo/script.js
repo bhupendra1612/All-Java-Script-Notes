@@ -252,23 +252,31 @@ function abc(){
 // a) parentElement
 // b) parentNode
 // c) children
-// d) 
+// d) ChildNode
+// e) firstChild
+// f) lastChild
+// g) firstElementChild
+// h) lastElementChild
+// i) nextElementSibling
+// j) previousElementSibling
+// k) nextSibling
+// l) previousSibling
 
 // parentElement & parentNode
-let a = document.getElementById("inner").parentElement;
-let b = document.getElementById("outer").parentElement;
-let a1 = document.getElementById("inner").parentElement.style.background = 'red'
+var a = document.getElementById("inner").parentElement;
+var b = document.getElementById("outer").parentElement;
+var a1 = document.getElementById("inner").parentElement.style.background = 'red'
 
-let c = document.getElementById("inner").parentNode;
-let c1 = document.getElementById("inner").parentNode.style.background = 'red'
+var c = document.getElementById("inner").parentNode;
+var c1 = document.getElementById("inner").parentNode.style.background = 'red'
 
 
 // children & ChildNode
-let a = document.getElementById("inner").children; // it is give only elements
-let b = document.getElementById("outer").children;
-let b = document.getElementById("inner").children[1];
-let b = document.getElementById("inner").children[1].innerHTML;
-let c1 = document.getElementById("inner").children[1].style.background = 'red'
+var a = document.getElementById("inner").children; // it is give only elements
+var b = document.getElementById("outer").children;
+var b = document.getElementById("inner").children[1];
+var b = document.getElementById("inner").children[1].innerHTML;
+var c1 = document.getElementById("inner").children[1].style.background = 'red'
 
 
 let a = document.getElementById("inner").childNodes;  // it is give both element & text 
@@ -278,11 +286,86 @@ let b = document.getElementById("inner").childNodes[4].innerHTML;
 let c1 = document.getElementById("inner").childNodes[1].style.background = 'red';
 
 
+// firstElementChild, lastElementChild
+
+var x = document.getElementById("inner").firstElementChild;
+var x = document.getElementById("inner").firstElementChild.innerHTML;
+document.getElementById("inner").firstElementChild.style.backgroundColor = "red";
+
+var x = document.getElementById("outer").firstElementChild;
+var x = document.getElementById("outer").firstElementChild.innerHTML;
+document.getElementById("outer").firstElementChild.style.backgroundColor = "red";
+
+
+var x = document.getElementById("inner").lastElementChild;
+var x = document.getElementById("inner").lastElementChild.innerHTML;
+document.getElementById("inner").lastElementChild.style.backgroundColor = "red";
+
+
+// firstChild, lastChild : it include nodes also 
+
+var x = document.getElementById("inner").firstChild;
+var x = document.getElementById("inner").firstChild.innerHTML;
+document.getElementById("inner").firstChild.style.backgroundColor = "red";
+
+var x = document.getElementById("inner").lastChild;
+var x = document.getElementById("inner").lastChild.innerHTML;
+document.getElementById("inner").lastChild.style.backgroundColor = "red";
+
+
+// nextElementSibling, previousElementSibling
+
+var x = document.getElementById("child-C").nextElementSibling;
+var x = document.getElementById("child-C").nextElementSibling.innerHTML;
+document.getElementById("child-C").nextElementSibling.style.backgroundColor = "red";
+
+var x = document.getElementById("child-C").previousElementSibling;
+var x = document.getElementById("child-C").previousElementSibling.innerHTML;
+document.getElementById("child-C").previousElementSibling.style.backgroundColor = "red";
+
+
+// nextSibling, previousSibling : it is also include text node
+
+var x = document.getElementById("child-C").nextSibling;
+var x = document.getElementById("child-C").nextSibling.innerHTML;
+document.getElementById("child-C").nextSibling.style.backgroundColor = "red";
+
+var x = document.getElementById("child-C").previousSibling;
+var x = document.getElementById("child-C").previousSibling.innerHTML;
+document.getElementById("child-C").previousSibling.style.backgroundColor = "red";
 
 
 
+// ========== DOM Create Methods ============
+// a) createElement
+// b) createTextNode
+// c) createComment
+
+var newElement = document.createElement("p")
+var newElement = document.createElement("h2")
+
+var newText = document.createTextNode("It is for create text in html")  // no limit on text charator
+var newText = document.createTextNode("It is for create text in html")
+
+var newComment = document.createComment("this is use for comment")
 
 
+// ======== DOM Append Methods =========
+// a) appendChild
+// b) insertBefore
+// c) insertAdjacentElement
+// d) insertAdjacentHTML
+// e) insertAdjacentText
 
+newElement.appendChild(newText);
+console.log(newElement);
 
+document.getElementById("text").appendChild(newElement)
+document.getElementById("text").appendChild(newComment)
+console.log(newElement);
 
+target = document.getElementById("text")
+target.insertBefore(newElement,target.childNodes[0]);
+
+// insertAdjacentElement 
+yes 
